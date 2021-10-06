@@ -1,0 +1,7 @@
+apiVersion: nifi.orange.com/v1alpha1
+kind: ProcessorControl
+metadata:
+  name: processorcontrol-sample
+spec:
+  # Add fields here
+  foo: bar

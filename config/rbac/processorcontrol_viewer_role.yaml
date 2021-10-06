@@ -1,0 +1,20 @@
+# permissions for end users to view processorcontrols.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: processorcontrol-viewer-role
+rules:
+- apiGroups:
+  - nifi.orange.com
+  resources:
+  - processorcontrols
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - nifi.orange.com
+  resources:
+  - processorcontrols/status
+  verbs:
+  - get
