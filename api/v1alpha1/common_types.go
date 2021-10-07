@@ -19,6 +19,9 @@ import "fmt"
 // DataflowState defines the state of a NifiDataflow
 type DataflowState string
 
+// ProcessorControlState defines the state of a NifiDataflow
+type ProcessorControlState string
+
 // DataflowUpdateRequestType defines the type of versioned flow update request
 type DataflowUpdateRequestType string
 
@@ -255,6 +258,13 @@ const (
 	DataflowStateOutOfSync DataflowState = "OutOfSync"
 	// DataflowStateInSync describes the status of a NifiDataflow as in sync
 	DataflowStateInSync DataflowState = "InSync"
+
+	// ProcessorControlStateStarting describes the status of a ProcessorControl as starting
+	ProcessorControlStateStarting ProcessorControlState = "Starting"
+	// ProcessorControlStateRunning describes the status of a ProcessorControl as running
+	ProcessorControlStateRan ProcessorControlState = "Ran"
+	// ProcessorControlStateStopped describes the status of a ProcessorControl as running
+	ProcessorControlStateStopped ProcessorControlState = "Stopped"
 
 	// RevertRequestType defines a revert changes request.
 	RevertRequestType DataflowUpdateRequestType = "Revert"

@@ -25,17 +25,18 @@ import (
 
 // ProcessorControlSpec defines the desired state of ProcessorControl
 type ProcessorControlSpec struct {
-	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
-
-	// Foo is an example field of ProcessorControl. Edit processorcontrol_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// the UUID of the parent process group where you want to deploy your dataflow, if not set deploy at root level.
+	ProcessorControlID string `json:"processorControlID,omitempty"`
+	// contains the reference to the NifiCluster with the one the processor is linked.
+	ClusterRef ClusterReference `json:"clusterRef,omitempty"`
 }
 
 // ProcessorControlStatus defines the observed state of ProcessorControl
 type ProcessorControlStatus struct {
-	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
+	// process ID
+	ProcessorID string `json:"processorID"`
+	// the processor current state.
+	State ProcessorControlState `json:"state"`
 }
 
 //+kubebuilder:object:root=true
