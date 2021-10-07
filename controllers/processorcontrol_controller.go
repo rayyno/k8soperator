@@ -23,6 +23,7 @@ import (
     "github.com/Orange-OpenSource/nifikop/pkg/k8sutil"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
+	"k8s.io/client-go/tools/record"
 
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
