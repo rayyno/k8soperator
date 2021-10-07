@@ -2,8 +2,8 @@ package common
 
 import (
 	"fmt"
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/nificlient"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/nificlient"
 	"github.com/go-logr/logr"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

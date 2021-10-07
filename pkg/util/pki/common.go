@@ -19,10 +19,10 @@ import (
 	"crypto/tls"
 	"fmt"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/resources/templates"
-	certutil "github.com/Orange-OpenSource/nifikop/pkg/util/cert"
-	"github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/resources/templates"
+	certutil "github.com/rayyno/k8soperator/pkg/util/cert"
+	"github.com/rayyno/k8soperator/pkg/util/nifi"
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
 )

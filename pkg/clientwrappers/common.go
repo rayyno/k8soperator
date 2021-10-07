@@ -3,7 +3,7 @@ package clientwrappers
 import (
 	"fmt"
 
-	"github.com/Orange-OpenSource/nifikop/pkg/nificlient"
+	"github.com/rayyno/k8soperator/pkg/nificlient"
 	"github.com/go-logr/logr"
 )
 

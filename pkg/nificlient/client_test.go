@@ -19,9 +19,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
-	nifiutil "github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
+	nifiutil "github.com/rayyno/k8soperator/pkg/util/nifi"
 	nigoapi "github.com/erdrix/nigoapi/pkg/nifi"
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"

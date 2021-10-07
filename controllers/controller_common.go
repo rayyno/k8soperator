@@ -19,8 +19,8 @@ import (
 	"time"
 
 	"emperror.dev/errors"
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
 	"github.com/go-logr/logr"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"

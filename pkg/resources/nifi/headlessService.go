@@ -16,9 +16,9 @@ package nifi
 
 import (
 	"fmt"
-	"github.com/Orange-OpenSource/nifikop/pkg/resources/templates"
-	"github.com/Orange-OpenSource/nifikop/pkg/util"
-	nifiutils "github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/pkg/resources/templates"
+	"github.com/rayyno/k8soperator/pkg/util"
+	nifiutils "github.com/rayyno/k8soperator/pkg/util/nifi"
 	corev1 "k8s.io/api/core/v1"
 	runtimeClient "sigs.k8s.io/controller-runtime/pkg/client"
 )

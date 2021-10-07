@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
 )
 
 var log = ctrl.Log.WithName("controller_testing")

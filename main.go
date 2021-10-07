@@ -25,7 +25,7 @@ import (
 	certv1 "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha2"
 	"sigs.k8s.io/controller-runtime/pkg/cache"
 
-	"github.com/Orange-OpenSource/nifikop/version"
+	"github.com/rayyno/k8soperator/version"
 
 	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
 	// to ensure that exec-entrypoint and run can make use of them.
@@ -38,9 +38,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	nifiv1alpha1 "github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/controllers"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	nifiv1alpha1 "github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/controllers"
 	// +kubebuilder:scaffold:imports
 )
 

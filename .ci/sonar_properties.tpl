@@ -18,7 +18,7 @@ sonar.go.coverage.reportPaths=coverage.out
 sonar.go.tests.reportPaths=test-report.out
 sonar.coverage.dtdVerification=false
 sonar.log.level=INFO
-sonar.links.ci=https://github.com/Orange-OpenSource/nifikop/pipelines
+sonar.links.ci=https://github.com/rayyno/k8soperator/pipelines
 sonar.dynamicAnalysis = reuseReports
 sonar.scm.enabled = false
 

@@ -21,7 +21,7 @@ NiFiKop has been validated with :
 Checkout the project.
 
 ```bash
-git clone https://github.com/Orange-OpenSource/nifikop.git
+git clone https://github.com/rayyno/k8soperator.git
 cd nifikop
 ```
 

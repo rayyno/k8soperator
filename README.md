@@ -5,15 +5,15 @@
     <img src="https://img.shields.io/docker/v/orangeopensource/nifikop.svg?sort=date" alt="Docker Automated build">
   </a>
 
-  <a href="https://circleci.com/gh/Orange-OpenSource/nifikop">
-    <img src="https://circleci.com/gh/Orange-OpenSource/nifikop/tree/master.svg?style=shield" alt="CircleCI">
+  <a href="https://circleci.com/gh/rayyno/k8soperator">
+    <img src="https://circleci.com/gh/rayyno/k8soperator/tree/master.svg?style=shield" alt="CircleCI">
   </a>
 
-  <a href="https://goreportcard.com/report/github.com/Orange-OpenSource/nifikop">
-    <img src="https://goreportcard.com/badge/github.com/Orange-OpenSource/nifikop" alt="Go Report Card">
+  <a href="https://goreportcard.com/report/github.com/rayyno/k8soperator">
+    <img src="https://goreportcard.com/badge/github.com/rayyno/k8soperator" alt="Go Report Card">
   </a>
 
-  <a href="https://github.com/Orange-OpenSource/nifikop/">
+  <a href="https://github.com/rayyno/k8soperator/">
     <img src="https://img.shields.io/badge/license-Apache%20v2-orange.svg" alt="license">
   </a>
 </p>
@@ -44,7 +44,7 @@ Some of the roadmap features :
 
 ## Motivation
 
-At [Orange](https://opensource.orange.com/fr/accueil/) we are building some [Kubernetes operator](https://https://github.com/Orange-OpenSource/nifikop?utf8=%E2%9C%93&q=operator&type=&language=), that operate NiFi and Cassandra clusters (among other types) for our business cases.
+At [Orange](https://opensource.orange.com/fr/accueil/) we are building some [Kubernetes operator](https://https://github.com/rayyno/k8soperator?utf8=%E2%9C%93&q=operator&type=&language=), that operate NiFi and Cassandra clusters (among other types) for our business cases.
 
 There are already some approaches to operating NiFi on Kubernetes, however, we did not find them appropriate for use in a highly dynamic environment, nor capable of meeting our needs.
 
@@ -67,7 +67,7 @@ Check out the [Supported Features Page](https://orange-opensource.github.io/nifi
 
 ## Issues, feature requests and roadmap
 
-Please note that the NiFi operator is constantly under development and new releases might introduce breaking changes. We are striving to keep backward compatibility as much as possible while adding new features at a fast pace. Issues, new features or bugs are tracked on the projects [GitHub page](https://github.com/Orange-OpenSource/nifikop/issues) - please feel free to add yours!
+Please note that the NiFi operator is constantly under development and new releases might introduce breaking changes. We are striving to keep backward compatibility as much as possible while adding new features at a fast pace. Issues, new features or bugs are tracked on the projects [GitHub page](https://github.com/rayyno/k8soperator/issues) - please feel free to add yours!
 
 To track some of the significant features and future items from the roadmap please visit the [roadmap doc](https://orange-opensource.github.io/nifikop/docs/1_concepts/4_roadmap).
 

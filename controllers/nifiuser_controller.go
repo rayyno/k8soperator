@@ -20,11 +20,11 @@ import (
 	"context"
 	"emperror.dev/errors"
 	"fmt"
-	usercli "github.com/Orange-OpenSource/nifikop/pkg/clientwrappers/user"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
-	"github.com/Orange-OpenSource/nifikop/pkg/k8sutil"
-	"github.com/Orange-OpenSource/nifikop/pkg/pki"
-	"github.com/Orange-OpenSource/nifikop/pkg/util"
+	usercli "github.com/rayyno/k8soperator/pkg/clientwrappers/user"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
+	"github.com/rayyno/k8soperator/pkg/k8sutil"
+	"github.com/rayyno/k8soperator/pkg/pki"
+	"github.com/rayyno/k8soperator/pkg/util"
 	"github.com/go-logr/logr"
 	certv1 "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha2"
 	corev1 "k8s.io/api/core/v1"
@@ -37,7 +37,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 	"time"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
 )
 
 var userFinalizer = "nifiusers.nifi.orange.com/finalizer"

@@ -60,12 +60,12 @@ $ helm install nifikop \
 In the case where you don't want to deploy the crds using helm (`--skip-crds`) you need to deploy manually the crds beforehand:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nificlusters.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiusers.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiusergroups.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifidataflows.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiparametercontexts.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiregistryclients.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nificlusters.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiusers.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiusergroups.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifidataflows.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiparametercontexts.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiregistryclients.yaml
 ```
 
 ::: 

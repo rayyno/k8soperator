@@ -20,10 +20,10 @@ import (
 	"context"
 	"emperror.dev/errors"
 	"fmt"
-	"github.com/Orange-OpenSource/nifikop/pkg/clientwrappers/scale"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
-	"github.com/Orange-OpenSource/nifikop/pkg/k8sutil"
-	nifiutil "github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/pkg/clientwrappers/scale"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
+	"github.com/rayyno/k8soperator/pkg/k8sutil"
+	nifiutil "github.com/rayyno/k8soperator/pkg/util/nifi"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/client-go/tools/record"
@@ -38,7 +38,7 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
 )
 
 // NifiClusterTaskReconciler reconciles

@@ -17,8 +17,8 @@ package config
 import (
 	"fmt"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/util/nifi"
 	"github.com/go-logr/logr"
 )
 

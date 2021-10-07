@@ -56,12 +56,12 @@ $ helm install nifikop \
 In the case where you don't want to deploy the crds using helm (`--skip-crds`) or you are using a version of kubernetes that is under 1.16, you need to deploy manually the crds beforehand:
 
 ```console
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nificlusters_crd.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nifiusers_crd.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nifiusergroups_crd.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nifidataflows_crd.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nifiparametercontexts_crd.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nifiregistryclients_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nificlusters_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nifiusers_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nifiusergroups_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nifidataflows_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nifiparametercontexts_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nifiregistryclients_crd.yaml
 ```
 
 You can make a dry run of the chart before deploying :

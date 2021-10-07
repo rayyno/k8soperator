@@ -20,7 +20,7 @@ package nifi
 //	"strings"
 //	"testing"
 //
-//	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
+//	"github.com/rayyno/k8soperator/api/v1alpha1"
 //	"github.com/stretchr/testify/assert"
 //)
 //

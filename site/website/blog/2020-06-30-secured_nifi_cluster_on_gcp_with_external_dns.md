@@ -66,7 +66,7 @@ Once you have completed the above prerequisites, deploying you NiFi cluster will
 Open your Google Cloud Console in your GCP project and run : 
 
 ```sh
-git clone https://github.com/Orange-OpenSource/nifikop/nifikop.git
+git clone https://github.com/rayyno/k8soperator/nifikop.git
 cd nifikop/docs/tutorials/secured_nifi_cluster_on_gcp_with_external_dns
 ```
 
@@ -175,16 +175,16 @@ Deploy the NiFiKop crds :
 <TabItem value="k8s16+">
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/nifi.orange.com_nificlusters_crd.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/nifi.orange.com_nifiusers_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/nifi.orange.com_nificlusters_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/nifi.orange.com_nifiusers_crd.yaml
 ```
 
 </TabItem>
 <TabItem value="k8sprev">
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nificlusters_crd.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/deploy/crds/v1beta1/nifi.orange.com_nifiusers_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nificlusters_crd.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/deploy/crds/v1beta1/nifi.orange.com_nifiusers_crd.yaml
 ```
 </TabItem>
 </Tabs>

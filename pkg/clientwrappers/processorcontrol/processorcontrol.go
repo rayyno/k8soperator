@@ -6,7 +6,7 @@ import (
 	"github.com/rayyno/k8soperator/api/v1alpha1"
 	"github.com/rayyno/k8soperator/pkg/clientwrappers"
 	"github.com/rayyno/k8soperator/pkg/common"
-	//"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
+	//"github.com/rayyno/k8soperator/pkg/errorfactory"
 	"github.com/rayyno/k8soperator/pkg/nificlient"
 	nigoapi "github.com/erdrix/nigoapi/pkg/nifi"
 	ctrl "sigs.k8s.io/controller-runtime"

@@ -85,19 +85,19 @@ helm install cert-manager \
 
 ## Installing with Helm
 
-You can deploy the operator using a Helm chart [Helm chart](https://github.com/Orange-OpenSource/nifikop/tree/master/helm):
+You can deploy the operator using a Helm chart [Helm chart](https://github.com/rayyno/k8soperator/tree/master/helm):
 
 > To install an other version of the operator use `helm install --name=nifikop --namespace=nifi --set operator.image.tag=x.y.z orange-incubator/nifikop`
 
 In the case where you don't want to deploy the crds using helm (`--skip-crds`), you have to deploy manually the crds :
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nificlusters.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiusers.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiusergroups.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifidataflows.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiparametercontexts.yaml
-kubectl apply -f https://raw.githubusercontent.com/Orange-OpenSource/nifikop/master/config/crd/bases/nifi.orange.com_nifiregistryclients.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nificlusters.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiusers.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiusergroups.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifidataflows.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiparametercontexts.yaml
+kubectl apply -f https://raw.githubusercontent.com/rayyno/k8soperator/master/config/crd/bases/nifi.orange.com_nifiregistryclients.yaml
 ```
 
 Add the orange incubator repository :

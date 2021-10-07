@@ -19,8 +19,8 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"time"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
 	nigoapi "github.com/erdrix/nigoapi/pkg/nifi"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

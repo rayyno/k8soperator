@@ -15,8 +15,8 @@
 package certmanagerpki
 
 import (
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/util/pki"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/util/pki"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

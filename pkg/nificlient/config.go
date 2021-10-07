@@ -17,10 +17,10 @@ package nificlient
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/pki"
-	"github.com/Orange-OpenSource/nifikop/pkg/util"
-	"github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/pki"
+	"github.com/rayyno/k8soperator/pkg/util"
+	"github.com/rayyno/k8soperator/pkg/util/nifi"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"strings"
 )

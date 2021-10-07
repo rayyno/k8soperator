@@ -16,9 +16,9 @@ package nifi
 
 import (
 	"fmt"
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/resources/templates"
-	"github.com/Orange-OpenSource/nifikop/pkg/util"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/resources/templates"
+	"github.com/rayyno/k8soperator/pkg/util"
 	"github.com/go-logr/logr"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"

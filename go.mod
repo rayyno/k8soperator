@@ -1,4 +1,4 @@
-module github.com/Orange-OpenSource/nifikop
+module github.com/rayyno/k8soperator
 
 go 1.15
 

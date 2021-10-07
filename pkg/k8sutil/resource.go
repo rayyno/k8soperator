@@ -18,8 +18,8 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
 	v1 "k8s.io/api/core/v1"
 
 	"emperror.dev/errors"

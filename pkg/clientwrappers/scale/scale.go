@@ -19,11 +19,11 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"time"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/clientwrappers"
-	"github.com/Orange-OpenSource/nifikop/pkg/common"
-	"github.com/Orange-OpenSource/nifikop/pkg/nificlient"
-	nifiutil "github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/clientwrappers"
+	"github.com/rayyno/k8soperator/pkg/common"
+	"github.com/rayyno/k8soperator/pkg/nificlient"
+	nifiutil "github.com/rayyno/k8soperator/pkg/util/nifi"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 

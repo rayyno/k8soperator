@@ -16,10 +16,10 @@ package pki
 
 import (
 	"fmt"
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/resources/templates"
-	"github.com/Orange-OpenSource/nifikop/pkg/util"
-	certutil "github.com/Orange-OpenSource/nifikop/pkg/util/cert"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/resources/templates"
+	"github.com/rayyno/k8soperator/pkg/util"
+	certutil "github.com/rayyno/k8soperator/pkg/util/cert"
 	"github.com/stretchr/testify/assert"
 	"reflect"
 	"testing"

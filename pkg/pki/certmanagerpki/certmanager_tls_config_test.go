@@ -19,9 +19,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
-	certutil "github.com/Orange-OpenSource/nifikop/pkg/util/cert"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
+	certutil "github.com/rayyno/k8soperator/pkg/util/cert"
 	corev1 "k8s.io/api/core/v1"
 )
 

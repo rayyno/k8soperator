@@ -18,9 +18,9 @@ import (
 	"context"
 	"crypto/tls"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/pki/certmanagerpki"
-	"github.com/Orange-OpenSource/nifikop/pkg/util/pki"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/pki/certmanagerpki"
+	"github.com/rayyno/k8soperator/pkg/util/pki"
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"

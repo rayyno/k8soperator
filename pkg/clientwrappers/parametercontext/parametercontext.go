@@ -1,11 +1,11 @@
 package parametercontext
 
 import (
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	"github.com/Orange-OpenSource/nifikop/pkg/clientwrappers"
-	"github.com/Orange-OpenSource/nifikop/pkg/common"
-	"github.com/Orange-OpenSource/nifikop/pkg/errorfactory"
-	"github.com/Orange-OpenSource/nifikop/pkg/nificlient"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	"github.com/rayyno/k8soperator/pkg/clientwrappers"
+	"github.com/rayyno/k8soperator/pkg/common"
+	"github.com/rayyno/k8soperator/pkg/errorfactory"
+	"github.com/rayyno/k8soperator/pkg/nificlient"
 	nigoapi "github.com/erdrix/nigoapi/pkg/nifi"
 	corev1 "k8s.io/api/core/v1"
 	ctrl "sigs.k8s.io/controller-runtime"

@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Orange-OpenSource/nifikop/pkg/resources/templates"
-	"github.com/Orange-OpenSource/nifikop/pkg/util"
+	"github.com/rayyno/k8soperator/pkg/resources/templates"
+	"github.com/rayyno/k8soperator/pkg/util"
 	"github.com/go-logr/logr"
 	policyv1beta1 "k8s.io/api/policy/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

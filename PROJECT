@@ -4,49 +4,49 @@ plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: nifikop
-repo: github.com/Orange-OpenSource/nifikop
+repo: github.com/rayyno/k8soperator
 resources:
 - api:
     crdVersion: v1
   domain: orange.com
   group: nifi
   kind: NifiCluster
-  path: github.com/Orange-OpenSource/nifikop/api/v1alpha1
+  path: github.com/rayyno/k8soperator/api/v1alpha1
   version: v1alpha1
 - api:
     crdVersion: v1
   domain: orange.com
   group: nifi
   kind: NifiUserGroup
-  path: github.com/Orange-OpenSource/nifikop/api/v1alpha1
+  path: github.com/rayyno/k8soperator/api/v1alpha1
   version: v1alpha1
 - api:
     crdVersion: v1
   domain: orange.com
   group: nifi
   kind: NifiUser
-  path: github.com/Orange-OpenSource/nifikop/api/v1alpha1
+  path: github.com/rayyno/k8soperator/api/v1alpha1
   version: v1alpha1
 - api:
     crdVersion: v1
   domain: orange.com
   group: nifi
   kind: NifiRegistryClient
-  path: github.com/Orange-OpenSource/nifikop/api/v1alpha1
+  path: github.com/rayyno/k8soperator/api/v1alpha1
   version: v1alpha1
 - api:
     crdVersion: v1
   domain: orange.com
   group: nifi
   kind: NifiDataflow
-  path: github.com/Orange-OpenSource/nifikop/api/v1alpha1
+  path: github.com/rayyno/k8soperator/api/v1alpha1
   version: v1alpha1
 - api:
     crdVersion: v1
   domain: orange.com
   group: nifi
   kind: NifiParameterContext
-  path: github.com/Orange-OpenSource/nifikop/api/v1alpha1
+  path: github.com/rayyno/k8soperator/api/v1alpha1
   version: v1alpha1
 - api:
     crdVersion: v1
@@ -55,6 +55,6 @@ resources:
   domain: orange.com
   group: nifi
   kind: ProcessorControl
-  path: github.com/Orange-OpenSource/nifikop/api/v1alpha1
+  path: github.com/rayyno/k8soperator/api/v1alpha1
   version: v1alpha1
 version: "3"

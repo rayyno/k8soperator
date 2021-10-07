@@ -17,8 +17,8 @@ package nificlient
 import (
 	"testing"
 
-	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
-	nifiutil "github.com/Orange-OpenSource/nifikop/pkg/util/nifi"
+	"github.com/rayyno/k8soperator/api/v1alpha1"
+	nifiutil "github.com/rayyno/k8soperator/pkg/util/nifi"
 	nigoapi "github.com/erdrix/nigoapi/pkg/nifi"
 	"github.com/jarcoal/httpmock"
 )
