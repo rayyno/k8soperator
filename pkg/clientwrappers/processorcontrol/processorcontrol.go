@@ -1,7 +1,7 @@
 package processorcontrol
 
 import (
-	"strings"
+	//"strings"
 
 	"github.com/Orange-OpenSource/nifikop/api/v1alpha1"
 	"github.com/Orange-OpenSource/nifikop/pkg/clientwrappers"
