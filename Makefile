@@ -1,7 +1,7 @@
 # Image URL to use all building/pushing image targets
 SERVICE_NAME			:= nifikop
-DOCKER_REGISTRY_BASE 	?= orangeopensource
-IMAGE_TAG				?= $(shell git describe --tags --abbrev=0 --match '[0-9].*[0-9].*[0-9]' 2>/dev/null)
+DOCKER_REGISTRY_BASE 	?= gcr.io/endless-dialect-326514
+IMAGE_TAG				?= 0.6.4
 IMAGE_NAME 				?= $(SERVICE_NAME)
 BUILD_IMAGE				?= orangeopensource/nifikop-build
 GOLANG_VERSION          ?= 1.15
