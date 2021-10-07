@@ -20,10 +20,13 @@ import (
 	"context"
 	"fmt"
 
+    "github.com/Orange-OpenSource/nifikop/pkg/clientwrappers/processorcontrol"
     "github.com/Orange-OpenSource/nifikop/pkg/k8sutil"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/client-go/tools/record"
+    "time"
+    "sigs.k8s.io/controller-runtime/pkg/reconcile"
 
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -81,11 +84,12 @@ func (r *ProcessorControlReconciler) Reconcile(ctx context.Context, req ctrl.Req
 // 	}
 
 	// Push any changes
-	if instance, err = r.updateAndFetchLatest(ctx, instance); err != nil {
-		return RequeueWithError(r.Log, "failed to update ProcessorControl", err)
-	}
+// 	if instance, err = r.updateAndFetchLatest(ctx, instance); err != nil {
+// 		return RequeueWithError(r.Log, "failed to update ProcessorControl", err)
+// 	}
 
 	var cluster *v1alpha1.NifiCluster
+	clusterNamespace := GetClusterRefNamespace(instance.Namespace, instance.Spec.ClusterRef)
 	if cluster, err = k8sutil.LookupNifiCluster(r.Client, instance.Spec.ClusterRef.Name, clusterNamespace); err != nil {
 		// This shouldn't trigger anymore, but leaving it here as a safetybelt
 // 		if k8sutil.IsMarkedForDeletion(instance.ObjectMeta) {
