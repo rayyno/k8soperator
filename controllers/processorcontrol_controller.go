@@ -122,6 +122,9 @@ func (r *ProcessorControlReconciler) Reconcile(ctx context.Context, req ctrl.Req
 		return RequeueWithError(r.Log, "failure checking for existing processors", err)
 	}
 
+    // remove this after testing
+	instance.Status.State = v1alpha1.ProcessorControlStateStopped
+
 	// Schedule the processor
 	if instance.Status.State == v1alpha1.ProcessorControlStateStopped {
 		instance.Status.State = v1alpha1.ProcessorControlStateStarting
