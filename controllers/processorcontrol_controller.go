@@ -25,8 +25,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/client-go/tools/record"
-    "time"
-    "sigs.k8s.io/controller-runtime/pkg/reconcile"
+    //"time"
+    //"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
 	"github.com/go-logr/logr"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -66,7 +66,7 @@ func (r *ProcessorControlReconciler) Reconcile(ctx context.Context, req ctrl.Req
 
 	var err error
 
-	// Fetch the Nifi instance
+	// Fetch the Nifi ProcessorControl instance
 	instance := &v1alpha1.ProcessorControl{}
 	if err = r.Client.Get(ctx, req.NamespacedName, instance); err != nil {
 		if apierrors.IsNotFound(err) {
@@ -91,36 +91,20 @@ func (r *ProcessorControlReconciler) Reconcile(ctx context.Context, req ctrl.Req
 	var cluster *v1alpha1.NifiCluster
 	clusterNamespace := GetClusterRefNamespace(instance.Namespace, instance.Spec.ClusterRef)
 	if cluster, err = k8sutil.LookupNifiCluster(r.Client, instance.Spec.ClusterRef.Name, clusterNamespace); err != nil {
-		// This shouldn't trigger anymore, but leaving it here as a safetybelt
-// 		if k8sutil.IsMarkedForDeletion(instance.ObjectMeta) {
-// 			r.Log.Info("Cluster is already gone, there is nothing we can do")
-// 			if err = r.removeFinalizer(ctx, instance); err != nil {
-// 				return RequeueWithError(r.Log, "failed to remove finalizer", err)
-// 			}
-// 			return Reconciled()
-// 		}
-
-		// the cluster does not exist - should have been caught pre-flight
-		return RequeueWithError(r.Log, "failed to lookup referenced cluster", err)
+	// the cluster does not exist - should have been caught pre-flight
+	return RequeueWithError(r.Log, "failed to lookup referenced cluster", err)
 	}
-
-	// Check if marked for deletion and if so run finalizers
-// 	if k8sutil.IsMarkedForDeletion(instance.ObjectMeta) {
-// 		return r.checkFinalizers(ctx, instance, cluster)
-// 	}
 
 	// if the processor is running then reconciled
 	if instance.Status.State == v1alpha1.ProcessorControlStateRan {
 		return Reconciled()
 	}
 
-	r.Recorder.Event(instance, corev1.EventTypeWarning, "Reconciling", fmt.Sprintf("Reconciling LOG TEST THIS IS A TEST!!!!"))
-
 	// Check if the processors already exist
-	existing, err := processorcontrol.ProcessorExist(r.Client, instance, cluster)
-	if err != nil {
-		return RequeueWithError(r.Log, "failure checking for existing processors", err)
-	}
+// 	existing, err := processorcontrol.ProcessorExist(r.Client, instance, cluster)
+// 	if err != nil {
+// 		return RequeueWithError(r.Log, "failure checking for existing processors", err)
+// 	}
 
     // remove this after testing
 	instance.Status.State = v1alpha1.ProcessorControlStateStopped
@@ -154,7 +138,8 @@ func (r *ProcessorControlReconciler) Reconcile(ctx context.Context, req ctrl.Req
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//return ctrl.Result{}, nil
-	return RequeueAfter(time.Duration(5) * time.Second)
+	return RequeueAfter(time.Duration(10) * time.Second)
+	//return Reconciled()
 }
 
 // SetupWithManager sets up the controller with the Manager.
